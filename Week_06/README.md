@@ -1,7 +1,5 @@
 # 电商交易场景（用户、商品、订单），简单的表结构
 
-![ER图](https://github.com/qb32uu/JAVA-000/tree/main/Week_06/ER图.bmp)
-
 ```sql
 CREATE TABLE address
 (
