@@ -13,7 +13,7 @@ public class Consumer implements IStressMock {
     private IOrdersService ordersService;
     private static int SHOPPING_NO = 0;
 
-    private static final int ALL_NO = 5000;// 1_000_000
+    private static final int ALL_NO = 10000;// 1_000_000
     private static final int ONCE_NO = ALL_NO / 4 / 10;
 
     /**

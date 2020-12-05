@@ -31,10 +31,10 @@ public class AddressServiceImpl extends AbsBaseService implements IAddressServic
             Random random = new Random();
             conn = this.getConnection();
 
-            for (Long spuId : MockData.getSpuIdList()) {
+            for (Long userId : MockData.getUserIdList()) {
                 int randomNo = random.nextInt(no) + 1;
                 for (int i = 0; i < randomNo; i++) {
-                    addressDao.insert(conn, CreateDataUtils.createRandomAddress(spuId, MockData.getRandomAreaId()));
+                    addressDao.insert(conn, CreateDataUtils.createRandomAddress(userId, MockData.getRandomAreaId()));
                 }
             }
 

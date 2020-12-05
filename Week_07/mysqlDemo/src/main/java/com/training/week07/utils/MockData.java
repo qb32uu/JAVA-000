@@ -46,6 +46,7 @@ public class MockData {
 
     public static void setProductTypeIdList(List<Long> productTypeIdList) {
         MockData.productTypeIdList = productTypeIdList;
+        MockData.productTypeIdListSize = MockData.productTypeIdList.size();
     }
 
     public static void setSpuIdList(List<Long> spuIdList) {
@@ -60,6 +61,10 @@ public class MockData {
     // **生成基础数据及模拟测试时的用户数据
     public static List<Long> getSpuIdList() {
         return spuIdList;
+    }
+
+    public static List<Long> getUserIdList() {
+        return userIdList;
     }
 
     public static Long getRandomAddressId() {

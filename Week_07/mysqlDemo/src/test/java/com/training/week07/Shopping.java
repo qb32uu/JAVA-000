@@ -16,9 +16,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import com.training.week07.mock.IStressMock;
 
-import lombok.extern.java.Log;
+//import lombok.extern.java.Log;
 
-@Log
+//@Log
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = DemoApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class Shopping {
@@ -28,10 +28,10 @@ public class Shopping {
     @Autowired
     private IStressMock writeOnly;
 
-    @Disabled
+//    @Disabled
     @Test
     public void consumer() {
-        for (int threadNo = 1; threadNo <= 8; threadNo++) {
+        for (int threadNo = 1; threadNo <= 10; threadNo++) {
             System.out.println("**" + threadNo + "个线程");
             // 连测5次
             for (int i = 0; i < 5; i++) {
@@ -40,10 +40,10 @@ public class Shopping {
         }
     }
 
-//    @Disabled
+    @Disabled
     @Test
     public void writeOnly() {
-        for (int threadNo = 1; threadNo <= 8; threadNo++) {
+        for (int threadNo = 1; threadNo <= 10; threadNo++) {
             System.out.println("**" + threadNo + "个线程");
             // 连测5次
             for (int i = 0; i < 5; i++) {

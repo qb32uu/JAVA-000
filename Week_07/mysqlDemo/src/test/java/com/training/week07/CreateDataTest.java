@@ -34,23 +34,23 @@ public class CreateDataTest {
 
     @Test
     public void createBaseDatat() {
-        log.info("添加20个区域");
-        areaService.randomAdd(20);
+        log.info("添加100个区域");
+        areaService.randomAdd(100);
 
-        log.info("添加300个用户");
-        userService.randomAdd(300);
+        log.info("添加1000个用户");
+        userService.randomAdd(1000);
 
         log.info("每个用户最多添加5个地址（最少1个地址）");
         addressService.randomAdd(5);
 
-        log.info("添加10个商品类型");
-        productTypeService.randomAdd(10);
+        log.info("添加100个商品类型");
+        productTypeService.randomAdd(100);
 
-        log.info("添加2000个商品");
-        spuService.randomAdd(2000);
+        log.info("添加10000个商品");
+        spuService.randomAdd(10000);
 
-        log.info("每个商品最多添加3个SKU(最少1个)");
-        skuService.randomAdd(3);
+        log.info("每个商品最多添加5个SKU(最少1个)");
+        skuService.randomAdd(5);
 
         log.info("成功添加基础数据");
     }
