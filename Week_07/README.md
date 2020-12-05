@@ -18,6 +18,8 @@
 
 # 读写分离-动态切换数据源版本1.0
 
+对应AbstractRoutingDataSourceDemo项目
+
 读写分离关键类在com.training.week07.datasource包中
 在DataSourceConfig中创建多个数据源，并生成继承AbstractRoutingDataSource(DynamicDataSource)的Bean dataSource。
 DynamicDataSource 使用ThreadLocal在设置本次连接数据源标识，实现当次处理固定数据源。
@@ -34,3 +36,8 @@ getAllBySlave第4次读，数据量：81
 getAll第3次读数据量：101
 getAllBySlave第5次读，数据量：96
 getAllBySlave第6次读，数据量：81
+
+# 读写分离-数据库框架版本2.0
+
+对应ShardingSphereDemo项目，核心代码在com.training.week07.config.DataSourceConfig，使用ShardingSphere管理读写
+
